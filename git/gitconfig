@@ -3,3 +3,5 @@
 [user]
 	email = enrruf@web.de
 	name = Enrico Rufnak
+[push]
+	default = simple
