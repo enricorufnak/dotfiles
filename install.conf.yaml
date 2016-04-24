@@ -5,10 +5,14 @@
 
 - clean: ['~']
 
+- shell:
+  - ["git submodule update --init --recursive", "Installing submodules"]
+  - ["mkdir -p ~/.config", "Creating config folder"]
+
 - link:
     ~/.bashrc: 'bashrc'
     ~/.gitconfig: 'git/gitconfig'
     ~/.gitignore_global: 'git/gitignore_global'
+    ~/.config/bleachbit: 'config/bleachbit/'
 
-- shell:
-  - [git submodule update --init --recursive, Installing submodules]
+
